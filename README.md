@@ -1,2 +1,2 @@
 # 100DaysOfCode
-This portfolio showcases a militant pursuit of growth in my programming ability.
+This portfolio showcases my militant pursuit of growth in programming ability.
