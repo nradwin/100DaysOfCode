@@ -1,4 +1,4 @@
-#GAME IMAGES
+# GAME IMAGES
 rock = '''
     _______
 ---'   ____)
@@ -48,14 +48,14 @@ hammer = '''
         !     `--------------'           ) (      | !
                                          '-'      !
 '''
-#img list for selection
+# img list for selection
 game_img = [rock, paper, scissors]
 game_choices = ['rock', 'paper', 'scissors']
 
-#import random for computer choice
+# import random for computer choice
 import random
 
-#intro
+# intro
 print('''
                  ,#####,
                  #_   _#
@@ -100,6 +100,7 @@ human_score = 0
 cpu_score = 0
 first_round = True
 
+# round dialogue
 while human_score < 2 and cpu_score < 2:
     if first_round:
         user_msg = '\nType to choose:\n'
@@ -109,10 +110,10 @@ while human_score < 2 and cpu_score < 2:
         user_msg = '\nGo again, you got this:\n'
     elif (human_score and cpu_score == 1):
         user_msg = '\nFinal round, the future of humanity hinges on you\n'
-    
+    # scoreboard
     print(f'\nSCORE (Best 2-OUT-OF-3)\nYou: {human_score}\nCPU: {cpu_score}')
 
-    #human choice
+    # human choice
     choice = int(input(user_msg + '0 for Rock\n1 for Paper\n2 for Scissors\n'))
     print('\nYou chose ' + game_choices[choice])
 
@@ -126,14 +127,14 @@ while human_score < 2 and cpu_score < 2:
         print(f'You chose {choice}, which breaks the contract. You lose.')
         exit()
 
-    #cpu "choice" using randint()
+    # cpu "choice" using randint()
     cpu_choice = random.randint(0, 2)
     cpu_dialogue = game_choices[cpu_choice]
 
     print(f'Computer "chose" {cpu_dialogue}')
     print(game_img[cpu_choice])
     
-    #responses based on human's choice
+    # responses based on human's choice
     if choice == 99:
         print('***BANG BANG BANG BANG!!!*** the computer is now a heaping pile of sparking scrap metal. You win.')
         human_score += 1
@@ -142,7 +143,7 @@ while human_score < 2 and cpu_score < 2:
         print('***BAMBAMBAMBAMCRASHBAM!!!*** You savagely bashed the computer with colossal force into a billion pieces. You win.')
         human_score += 1
 
-    #if rock
+    # if rock
     if choice == 0:
         if cpu_choice == 0:
             print('**CLACK** TIE! Go again!')
@@ -152,7 +153,7 @@ while human_score < 2 and cpu_score < 2:
         elif cpu_choice == 2:
             print('**KSH KSH KSHKSH** YES!! You obliterated the computer\'s baby scissors with a massive boulder the size of a mountain, lifted as the strength of Allah flows through your ENGORGED veins!!!!! You smashed it with a thunderous boom echoing through the land, leaving a pile of dust. You win.')
             human_score += 1
-    #if paper
+    # if paper
     if choice == 1:
         if cpu_choice == 0:
             print('**WHHHHHUUUU** Your massive net of fiberous interlockings envelops the rock and ejects it into the far edges of the cosmos.\nThe rock is now an irradiated pebble, lost forever, never to be remembered again.\nYou win.')
@@ -163,7 +164,7 @@ while human_score < 2 and cpu_score < 2:
             print('Never bring a piece of paper to a scissor fight...\nYou lose.')
             cpu_score += 1
 
-    #if scissors
+    # if scissors
     if choice == 2:
         if cpu_choice == 0:
             print('The AI preemptively hired a Pakastani freelancer on UpWork to disassemble your scissors with blinding speed and smash your head in with a rock.\nYou lose.')
@@ -176,7 +177,7 @@ while human_score < 2 and cpu_score < 2:
     
     first_round = False # next round
 
-# Announce winner
+# announce winner
 if human_score > cpu_score:
     print('\nYou defeated the AI with sheer momentum and strength, allowing humans to prosper for eons to come...\n')
 else:
