@@ -1,4 +1,5 @@
-# 100DaysofCode
+#100 Days of Code
+###Nick Radwin
 
 ## Table of Cotents
 1. **Band Name Generator**
