@@ -1,4 +1,4 @@
-# 100DaysOfCode
+# 100DaysofCode
 
 ## Table of Cotents
 1. **Band Name Generator**
