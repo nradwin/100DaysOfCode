@@ -50,16 +50,53 @@ hammer = '''
 '''
 #img list for selection
 game_img = [rock, paper, scissors]
+game_choices = ['rock', 'paper', 'scissors']
 
 #import random for computer choice
 import random
 
 #intro
-print('Welcome to Rock, Paper, Scissors')
-print('Who will win? The light being created by God himself, or a deterministic machine?')
+print('''
+                 ,#####,
+                 #_   _#
+                 |a` `a|
+                 |  u  |
+                 \  =  /
+                 |\___/|                                        
+        ___ ____/:     :\____ ___                                              ooooooooooooooooooooooooooooooooooooo
+      .'   `.-===-\   /-===-.`   '.                                            8                                .d88
+     /      .-"""""-.-"""""-.      \                                           8  oooooooooooooooooooooooooooood8888
+    /'             =:=             '\.                                         8  8888888888888888888888888P"   8888    oooooooooooooooo
+  .'  ' .:    o   -=:=-   o    :. '  `.                     //                 8  8888888888888888888888P"      8888    8              8
+  (.'   /'. '-.....-'-.....-' .'\   '.)                  VERSUS                8  8888888888888888888P"         8888    8             d8
+  /' ._/   ".     --:--     ."   \_. '\.                  //                   8  8888888888888P"               8888    8           d888
+ |  .'|      ".  ---:---  ."      |'.  |                                       8  8888888888P"                  8888    8          d8888
+ |  : |       |  ---:---  |       | :  |                                       8  8888888P"                     8888    8         d88888
+  \ : |       |_____._____|       | : /                                        8  8888P"                        8888    8        d888888
+  /   (       |----|------|       )   \                                        8  8888oooooooooooooooooooooocgmm8888    8       d8888888
+ /... .|      |    |      |      |. ...\                                       8 .od88888888888888888888888888888888    8      d88888888
+|::::/'' jgs /     |       \     ''\::::|                                      8888888888888888888888888888888888888    8     d888888888
+'""""       /'    .L_      `\       """"'                                                                               8    d8888888888
+           /'-.,__/` `\__..-'\                                                    ooooooooooooooooooooooooooooooo       8   d88888888888
+          ;      /     \      ;                                                  d                       ...oood8b      8  d888888888888
+          :     /       \     |                                                 d              ...oood888888888888b     8 d8888888888888
+          |    /         \.   |                                                d     ...oood88888888888888888888888b    8d88888888888888
+          |`../           |  ,/                                               dood8888888888888888888888888888888888b
+          ( _ )           |  _)
+          |   |           |   |
+          |___|           \___|
+          :===|            |==|
+           \  /            |__|
+           /\/\           /"""`8.__
+           |oo|           \__.//___)
+           |==|
+           \__/                                                                 
+''')
+print('Welcome to Rock, Paper, Scissors! MAN VERSUS MACHINE')
+print('Who will win? You, the light being created by God himself, or a deterministic machine?')
 
 #human choice
-choice = int(input('Choose: Type 0 for Rock, 1 for Paper, 2 for Scissors\n'))
+choice = int(input('Type to choose:\n0 for Rock\n1 for Paper\n2 for Scissors\n'))
 
 if choice >= 0 and choice < 3:
     print(game_img[choice])
@@ -73,8 +110,9 @@ else: #if choice is not rock, paper, or scissors
 
 #cpu "choice" using randint()
 cpu_choice = random.randint(0, 2)
+cpu_dialogue = game_choices[cpu_choice]
 
-print(f'Computer "chose" {cpu_choice}')
+print(f'Computer "chose" {cpu_dialogue}')
 print(game_img[cpu_choice])
     
 #responses based on human's choice
