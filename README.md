@@ -12,4 +12,9 @@
    - classic game with a modern twist, and hidden options...
 5. **Password Generator**
    - generate a secure password based on its requirements.
-6. 
+6. **Robotics: Wall Jump and Maze Escape**
+   - instruct a virtual, 2D robot to jump walls and escaoe a maze.
+7. **Hangman**
+   - traditional Hangman game.
+8. **Cryptography: Ceasar Cipher**
+9. 
