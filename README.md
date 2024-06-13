@@ -11,3 +11,5 @@
 4. **Rock, Paper, Scissors: Man v.s. Machine**
    - classic game with a modern twist, and hidden options...
 5. **Password Generator**
+   - generate a secure password based on its requirements.
+6. 
