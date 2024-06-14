@@ -12,7 +12,7 @@
    - find treasure at your peril in this simple, decision-based game.
    - if/elif/else, conditional operators
 4. **Rock, Paper, Scissors: Man v.s. Machine**
-   - classic game with a modern twist, and hidden options...
+   - assert human supremacy in this classic game with hidden options...
    - randomization, lists
 5. **Password Generator**
    - generate a secure password based on its requirements.
@@ -21,10 +21,14 @@
    - instruct a virtual, 2D robot to jump walls and escaoe a maze.
    - while loop, functions
 7. **Hangman**
-   - traditional Hangman game.
+   - play the traditional Hangman game.
    - flow chart planning
 8. **Cryptography: Ceasar Cipher**
    - encrypt and decrypt messages as Ceasar did with his army.
    - functions with parameters, keyword arguments, edge cases
 9. **Silent Auction**
+   - host a silent auction with multiple bidders.
+   - nested dictionaries
+10. **Calculator**
    - 
+   - functions with outputs
